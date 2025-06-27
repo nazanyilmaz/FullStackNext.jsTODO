@@ -1,6 +1,6 @@
 ## ToDoAPP(FullStackNext.js)
 
-- Kullanilan Teknolofiler
+- Kullanilan Teknolojiler
 - - Next.js 15(AppRouter): App Router Sayesinde dosya bazli routing kullanildi. Backend islemleri dogrudan app/api klosorunde gelistirildi.Olusturulan tum routlar Postman ile calistirildi
 - - Tailwind CSS: Sayfa stillendirmasi ve responsive olmasi saglandi.
 - - Zustand: Minimal ve etkili global state yonetimi yapildi. src/store dizininde verileri cekme, ekleme, guncelleme ve silme fonksiyonlari yonetildi
