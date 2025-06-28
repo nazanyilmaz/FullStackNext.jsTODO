@@ -39,12 +39,14 @@ export const useTodoStore = create((set) => ({
   },
   updateTodo: async (id, updates) => {
     try {
+      console.log("Sending update:", updates);
       const res = await fetch(`/api/todos/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updates),
       });
       const updated = await res.json();
+      console.log("Updated:", updated);
       set((state) => ({
         todos: state.todos.map((todo) => (todo.id === id ? updated : todo)),
       }));

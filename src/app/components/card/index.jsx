@@ -17,7 +17,7 @@ const Card = ({ todo }) => {
         </div>
         <div className="ml-auto flex flex-row gap-5">
           <div>
-            <Edit id={todo.id} handleEdit={updateTodo} todo={todo} />
+            <Edit todo={todo} />
           </div>
           <div className="">
             <Delete id={todo.id} handleDelete={deleteTodo} />

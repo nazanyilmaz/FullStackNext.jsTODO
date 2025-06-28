@@ -12,7 +12,7 @@ const Header = () => {
   const path = usePathname();
 
   return (
-    <div className="bg-zinc-900 border fixed top-0 left-0 w-full border-black border-b-amber-400 h-[100px] flex justify-between items-center px-12 ">
+    <div className="bg-zinc-900 border fixed top-0 left-0 w-full border-black border-b-amber-400 h-[100px] flex justify-between items-center px-10 ">
       <Link
         href="/"
         className=" text-3xl md:text-5xl font-extrabold"
