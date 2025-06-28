@@ -1,8 +1,0 @@
-{
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/api/todos/[id]/route": "app/api/todos/[id]/route.js",
-  "/api/todos/route": "app/api/todos/route.js",
-  "/(pages)/page": "app/(pages)/page.js",
-  "/(pages)/todo/[mode]/page": "app/(pages)/todo/[mode]/page.js",
-  "/(pages)/todo/todos/page": "app/(pages)/todo/todos/page.js"
-}
