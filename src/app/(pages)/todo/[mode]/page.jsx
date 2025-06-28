@@ -1,5 +1,4 @@
 import FormMode from "@/app/components/form";
-import { useTodoStore } from "@/store/todoStore";
 import { Delius } from "next/font/google";
 
 const delius = Delius({
@@ -29,7 +28,7 @@ const Form = async ({ params }) => {
   return (
     <div
       style={delius.style}
-      className=" my-20 font-extrabold text-xl flex flex-col justify-center items-center gap-3"
+      className=" my-20 font-extrabold text-xl flex flex-col  items-center gap-3 "
     >
       <h1 className="font-extrabold text-4xl my-6 text-zinc-600 flex flex-col">
         {isEditMode ? "Gorevi Guncelle" : "Yeni Gorev Olustur"}

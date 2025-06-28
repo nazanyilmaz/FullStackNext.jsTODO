@@ -55,7 +55,7 @@ const FormMode = ({ editItem }) => {
         <fieldset className="flex  items-center gap-10">
           <label htmlFor="">Baslik:</label>
           <input
-            className="bg-zinc-600 w-[300px]"
+            className="bg-zinc-600 w-[300px] text-md lg:text-lg pl-2"
             type="text"
             defaultValue={editItem?.title}
             name="title"
@@ -66,7 +66,7 @@ const FormMode = ({ editItem }) => {
         <fieldset className="flex  items-center gap-4">
           <label htmlFor="">Aciklama:</label>
           <textarea
-            className="bg-zinc-600 w-[300px]"
+            className="bg-zinc-600 w-[300px] h-[150px] text-md lg:text-lg pl-2"
             name="description"
             defaultValue={editItem?.description}
             onChange={handleChange}
@@ -85,8 +85,8 @@ const FormMode = ({ editItem }) => {
             <option>Tamamlandi</option>
           </select>
         </fieldset>
-        <div className=" flex justify-center items-center">
-          <button className="bg-amber-500 cursor-pointer my-8  border border-amber-500 hover:rounded-full text-3xl w-[350px] flex justify-center items-center ">
+        <div className=" flex justify-end ">
+          <button className="bg-amber-500 cursor-pointer my-8 py-1 border border-amber-500 hover:rounded-full text-xl md:text-3xl w-[350px] flex justify-center items-center ">
             {editItem ? "Guncelle" : "Olustur"}
           </button>
         </div>

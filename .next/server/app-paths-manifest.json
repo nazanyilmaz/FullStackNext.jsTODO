@@ -1,0 +1,4 @@
+{
+  "/(pages)/todo/todos/page": "app/(pages)/todo/todos/page.js",
+  "/(pages)/todo/[mode]/page": "app/(pages)/todo/[mode]/page.js"
+}

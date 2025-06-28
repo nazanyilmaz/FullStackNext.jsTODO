@@ -6,12 +6,12 @@ const Card = ({ todo }) => {
   const deleteTodo = useTodoStore((state) => state.deleteTodo);
   const updateTodo = useTodoStore((state) => state.updateTodo);
   return (
-    <div className=" hover:bg-zinc-900 transition cursor-pointer hover:shadow-amber-500 shadow-amber-200 shadow p-5 ">
-      <div className="flex flex-row gap-8 items-center">
+    <div className=" hover:bg-zinc-900 transition cursor-pointer hover:shadow-amber-500 shadow-amber-200 shadow mx-8 lg:mx-3 p-5 ">
+      <div className="flex flex-row gap-8 ">
         <div className="flex flex-col gap-1">
-          <h4>{todo?.title}</h4>
-          <p className="whitespace-pre-wrap">{todo?.description}</p>
-          <span className="text-zinc-400">
+          <h4 className="text-xl lg:text-2xl">{todo?.title}</h4>
+          <p className="whitespace-pre-wrap text-zinc-400">{todo?.description}</p>
+          <span className="">
             {new Date(todo?.createdAt).toLocaleDateString("tr-TR")}
           </span>
         </div>

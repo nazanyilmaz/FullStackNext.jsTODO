@@ -18,7 +18,6 @@ export async function PUT(req, context) {
     const id = context.params.id;
     const body = await req.json();
     const { title, description, completed } = body;
-    console.log("bodyy", body);
 
     const updatedTodo = await prisma.todo.update({
       where: { id },
