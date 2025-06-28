@@ -7,4 +7,6 @@
 - - MongoDB: NoSQL tabanli bu veritabani sayesinde olusturulan todo verileri ile veri ekleme,okuma,guncelleme ve silme islemleri yapildi.
 - - Prisma: Veritabani ile uygulama arasinda bir kopru gorevi goren ORM aracidir. MongoDb uzerinde kolay ve guvenilir modelleme yapildi.Bu model prisma/schema.prisma dosyasinda tanimlandi.CRUD islemlerinde daha sade okunabilir ve hatasiz bir sekilde yapildi.
 
+`npm run dev`
+
 ![Uygulama Demo](./demo.gif)
