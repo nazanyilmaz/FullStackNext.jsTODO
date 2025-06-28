@@ -8,9 +8,9 @@ const delius = Delius({
 });
 
 const getTodoById = async (id) => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/todos/${id}`, {
-    cache: "no-store", // ISR vs cache varsa önle
-  });
+  const baseUrl =
+    process.env.NEXT_PUBLIC_BASE_URL || "https://full-stack-next-js-todo.vercel.app";
+  const res = await fetch(`${baseUrl}/api/todos/${id}`);
 
   if (!res.ok) return null;
 
