@@ -13,14 +13,16 @@ export async function GET(req, { params }) {
     console.log("get/id hata", error);
   }
 }
-export async function PUT(req, { params }) {
+export async function PUT(req, context) {
   try {
-    const { id } = params;
+    const id = context.params.id;
     const body = await req.json();
+    const { title, description, completed } = body;
+    console.log("bodyy", body);
 
     const updatedTodo = await prisma.todo.update({
       where: { id },
-      data: body,
+      data: { title, description, completed },
     });
 
     return NextResponse.json(updatedTodo);
