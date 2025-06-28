@@ -7,14 +7,23 @@ const delius = Delius({
   subsets: ["latin"],
 });
 
+const getTodoById = async (id) => {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/todos/${id}`, {
+    cache: "no-store", // ISR vs cache varsa önle
+  });
+
+  if (!res.ok) return null;
+
+  return res.json();
+};
+
 const Form = async ({ params }) => {
   const { mode } = await params;
-  const fetchTodo = useTodoStore.getState().fetchTodo;
   const isEditMode = mode !== "new" ? true : false;
 
   let editItem = null;
   if (isEditMode) {
-    editItem = await fetchTodo(mode);
+    editItem = await getTodoById(mode);
   }
 
   return (
