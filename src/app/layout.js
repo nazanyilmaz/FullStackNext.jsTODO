@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       >
         <div className="min-h-screen flex flex-col">
           <Header />
-          <main className="flex-1 px-4 pt-6 pb-8 max-w-4xl mx-auto w-full h-[calc(100vh-120px)] overflow-y-auto">
+          <main className="flex-1 mb-8 px-4 pt-6 pb-8 max-w-4xl mx-auto w-full h-[calc(100vh-120px)] overflow-y-auto">
             {children}
           </main>
           <Footer />
